@@ -1,0 +1,21 @@
+{
+
+    "manifest_version": 2,
+    "name": "Quitar Sidebar Techable",
+    "version": "1.1",
+  
+    "description": "Quita el molesto sidebar de vaxidrez.com y el padding lo deja en 0",
+  
+    "icons": {
+      "32": "icons/sidebar.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.vaxidrez.com/*"],
+        "js": ["quitaSidebar.js"]
+      }
+    ]
+  
+  }
+  
